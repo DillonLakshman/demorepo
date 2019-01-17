@@ -1,0 +1,25 @@
+<div class="row bg-row">
+  <div class="col-md-12 main-area">
+    <div class="card login-card">
+      <div class="card-body">
+
+        <div class="row">
+          <h1 class="text-center">Demo Application</h1>
+        </div>
+        <div class="row">
+          <h5 class="text-center">AFIN API IDE Demo</h5>
+        </div>
+
+        <br>
+
+        <div class="row login-row">
+          <input class="input-field" type="file" (change)="onFile1Selected($event)" />
+          <input class="input-field" type="file" (change)="onFile2Selected($event)" />
+          <button class="input-button" (click)="verifyUser()">Verify</button> &nbsp;&nbsp;
+          <img *ngIf="verified" src="../../assets/checked.png" />
+        </div>       
+
+      </div>
+    </div>
+  </div>
+</div>
